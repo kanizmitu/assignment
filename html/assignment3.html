@@ -7,12 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-       let base = parseFloat(prompt("Enter the base:"));
-       let height = parseFloat(prompt("Enter the height:"));
-       let area = 0.5*base*height;
-       console.log("Area is:",area);
-       alert(area);
-   </script> 
+    <script>
+        let Y = parseFloat(prompt("Enter the number:"));
+        while(isNaN(Y)){
+            alert("Invalid!!! Enter a valid number:");
+            let Y= parseFloat(prompt("Enter the number:"));
+
+        }
+        forf(let i=0;i<=Y;i+2)
+        {
+            console.log(i);
+        }
+    </script>
 </body>
 </html>

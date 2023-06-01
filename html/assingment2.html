@@ -8,17 +8,17 @@
 </head>
 <body>
     <script>
-        let n = 5;
-        let string = "";
-        for(let i=1;i<=n;i++)
-        {
-            for(let j=1;j<=i;j++)
-            {
-                string+=j;
-            }
-            string+="\n"
+        let num = parseFloat(prompt("Enter a number:"));
+        let sum=1;
+        while(isNaN(num)){
+            alert("Invalid!! Enter a valid number");
+            let num = parseFloat(prompt("enter a nuumber:"));
         }
-        console.log(string);
+        for(i=num;i>=1;i--)
+        {
+            sum=sum*i;
+        }
+        console.log(sum);
     </script>
 </body>
 </html>

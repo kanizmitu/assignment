@@ -8,13 +8,17 @@
 </head>
 <body>
     <script>
-        let num1 = parseFloat(prompt("Enter the first num:"));
-        let num2 = parseFloat(prompt("Enter the second num:"));
-        let num3 = parseFloat(prompt("Enter the third num:"));
-        let sum = num1 + num2 + num3;
-        console.log("sum of the three number is:", sum);
-        alert(sum);
-
+        let A = parseFloat(prompt("Enter the number for multiplication table:"));
+        while(isNaN(A))
+        {
+            alert("invalid!! Enter a valid num .");
+            let A = parseFloat(prompt("Enter the number for multiplication table:"));
+        }
+        console.log("the",A,"'s multiplication table is:");
+        for(i=0;i<=10;i++)
+        {
+            console.log(A,"*",i,"=",A*i);
+        }
     </script>
 </body>
 </html>

@@ -8,14 +8,26 @@
 </head>
 <body>
     <script>
-        let cityname = prompt("Enter the city name:");
-        if (cityname != 'dhaka') {
-            console.log("Delivery charge is 120 TK");
-            
-        } else {
-            console.log("Delivery charge is 60 TK");
-            
-        }
+let name = prompt("Enter Your Name:");
+let uppercase=0;
+let lowercase=0;
+for(let i=0;i<=name.length;i++)
+{
+    if(name [i]>="a"&& name[i]<="z")
+    {
+        lowercase++;
+    }
+    else if(name[i]>="A"&& name[i]<="Z")
+    { 
+        uppercase++;
+    }
+}
+console.log("the lerngth of your name:",name.length);
+console.log("There are",uppercase,"uppercase in your name");
+console.log("There are",lowercase,"lowercase in your name");
+
+
+
     </script>
 </body>
 </html>
